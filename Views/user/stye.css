@@ -1,0 +1,51 @@
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.profile-column {
+    height: 100vh; /* Fix the height of the profile column */
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+.card {
+    margin-bottom: 1rem; /* Add margin between cards */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 4rem); /* Adjust height based on viewport height */
+}
+.content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+.profile-column {
+    flex: 0 0 300px; /* Set fixed width for profile column */
+    overflow-y: auto; /* Enable vertical scroll */
+}
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+}
